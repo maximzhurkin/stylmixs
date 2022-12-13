@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stylmixs</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <h1 class="heading heading--one">Stylus mixins</h1>
+
+      <h2 class="heading heading--two">column()</h2>
+      <div class="grid">
+        <div class="grid__row">
+          <div class="grid__column grid__column--one">
+            <div class="grid-column"></div>
+          </div>
+          <div class="grid__column grid__column--two">
+            <div class="grid-column"></div>
+          </div>
+          <div class="grid__column grid__column--three">
+            <div class="grid-column"></div>
+          </div>
+          <div class="grid__column grid__column--six">
+            <div class="grid-column"></div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="heading heading--two">placeholder()</h2>
+      <input class="input" type="text" placeholder="custom placeholder">
+
+      <h2 class="heading heading--two">gap()</h2>
+      <div class="box box--gap">
+        <div class="box__inner"></div>
+      </div>
+
+      <h2 class="heading heading--two">pad()</h2>
+      <div class="box box--pad">
+        <div class="box__inner"></div>
+      </div>
+
+      <h2 class="heading heading--two">fs()</h2>
+      <div class="label">font-size</div>
+
+      <h2 class="heading heading--two">overlay()</h2>
+      <div class="overlay"></div>
+
+      <h2 class="heading heading--two">hidebox()</h2>
+      <label class="file">
+        <input class="file__input" type="file" name="file">
+        <span class="file__label">browse...</span>
+      </label>
+
+      <h2 class="heading heading--two">mq()</h2>
+      <div class="query">
+        <div class="query__large">large</div>
+        <div class="query__middle">middle</div>
+        <div class="query__small">small</div>
+      </div>
+
+      <h2 class="heading heading--two">ts()</h2>
+      <div class="circle">hover</div>
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

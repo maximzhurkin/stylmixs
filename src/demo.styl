@@ -1,0 +1,122 @@
+@import '../index.styl'
+
+color_primary = #1c6db4
+color_thin = #f1f0f0
+color_gray = #848383
+
+fface('Inter', 'fonts/inter-300-light', 300, normal)
+fface('Inter', 'fonts/inter-400-regular', 400, normal)
+fface('Inter', 'fonts/inter-700-bold', 700, normal)
+
+body
+  font-family 'Inter'
+
+.container
+  margin-left auto
+  margin-right auto
+  gap(30px)
+  max-width 960px
+
+.heading
+  font-weight 700
+
+.grid
+  margin-left -(30px / 2)
+  margin-right -(30px / 2)
+  &__row
+    display flex
+  &__row:not(:last-child)
+    margin-bottom 30px
+  &__column
+    gap(30px / 2)
+    &--one
+      column(1)
+    &--two
+      column(2)
+    &--three
+      column(3)
+    &--six
+      column(6)
+
+.grid-column
+  height 32px
+  background-color color_thin
+
+.input
+  gap(8px)
+  display block
+  height 32px
+  border 2px solid color_thin
+  border-radius 6px
+  +placeholder()
+    color color_primary
+    font-weight 300
+
+.box
+  width 240px
+  border 1px dashed color_gray
+  &--gap
+    gap(30px)
+  &--pad
+    pad(30px)
+  &__inner
+    height 32px
+    background-color color_thin
+
+.label
+  fs(20, 28)
+  font-weight 300
+
+.overlay
+  width 240px
+  height 72px
+  display flex
+  align-items center
+  justify-content center
+  background-image repeating-linear-gradient(45deg, color_gray 25%, transparent 25%, transparent 75%, color_gray 75%, color_gray), repeating-linear-gradient(45deg, color_gray 25%, transparent 25%, transparent 75%, color_gray 75%, color_gray)
+  background-position 0 0, 10px 10px
+  background-size 20px 20px
+  position relative
+  &:after
+    +overlay()
+      background-color rgba(#000, .5)
+
+.file
+  &__input
+    hidebox()
+  &__label
+    cursor pointer
+    color color_primary
+    border-bottom 1px dashed color_primary
+
+.query
+  fs(20, 28)
+  &__middle
+  &__small
+    display none
+
++mq(960px)
+  .query
+    &__large
+      display none
+    &__middle
+      display block
+
++mq(500px)
+  .query
+    &__middle
+      display none
+    &__small
+      display block
+
+.circle
+  width 128px
+  height 64px
+  line-height 64px
+  text-align center
+  color #fff
+  background-color color_primary
+  ts(color, background-color)
+  &:hover
+    color color_primary
+    background-color #fff

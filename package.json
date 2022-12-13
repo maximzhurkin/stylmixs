@@ -1,0 +1,29 @@
+{
+  "name": "stylmixs",
+  "version": "0.0.1",
+  "description": "Stylus mixins",
+  "author": "Max Zhurkin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximzhurkin/stylmixs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maximzhurkin/stylmixs/issues"
+  },
+  "homepage": "https://github.com/maximzhurkin/stylmixs#readme",
+  "keywords": [
+    "stylus",
+    "mixins",
+    "css"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "stylus": "^0.59.0",
+    "vite": "^4.0.0"
+  }
+}
