@@ -8,7 +8,7 @@ npm i stylmixs -D
 @import 'stylmixs'
 ```
 
-## fface
+## fface()
 ```styl
 // stylus
 fface('Inter', 'fonts/inter-300-light', 300, normal)
