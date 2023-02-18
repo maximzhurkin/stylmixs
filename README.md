@@ -180,3 +180,17 @@ integer values from 1 to 12
   transition: color .25s ease-in-out, background-color .25s ease-in-out;
 }
 ```
+
+## ratio()
+```styl
+// stylus
+.aspect-ratio
+  ratio(16, 9)
+```
+```css
+/* css */
+.aspect-ratio {
+  padding-bottom: 56.25%;
+  height: 0;
+}
+```
