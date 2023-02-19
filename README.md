@@ -194,3 +194,17 @@ integer values from 1 to 12
   height: 0;
 }
 ```
+
+## percent()
+```styl
+// stylus
+// percentage of the number
+.percent
+  width percent(320, 960)
+```
+```css
+/* css */
+.percent {
+  width: 33.33%;
+}
+```
